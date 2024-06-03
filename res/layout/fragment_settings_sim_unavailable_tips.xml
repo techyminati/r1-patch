@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="3.0dip" android:paddingEnd="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tech.rabbit.r1launcher.widget.CanBackLabelView android:id="@id/cblv_title" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusDown="@id/tv_continue_on_wifi" android:layout_width="fill_parent" android:layout_height="wrap_content" app:canBackLabelViewFocusedLabel="@string/text_back" app:canBackLabelViewUnfocusedLabel="@string/settings_page_sim_pin" app:visibleFadeBackground="false" />
+    <Space android:layout_width="fill_parent" android:layout_height="68.0dip" />
+    <TextView android:textSize="30.0sp" android:textColor="@color/white" android:id="@id/tv_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_settings_sim_pin_sim_unavailable" android:includeFontPadding="false" android:fontFamily="@font/power_grotesk_regular" android:textFontWeight="400" />
+    <Space android:layout_width="fill_parent" android:layout_height="7.0dip" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/AAAAAA" android:id="@id/tv_tips2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_init_step_connect_unlock_sim_sim_unavailable_tips" android:includeFontPadding="false" android:lineSpacingMultiplier="1.15" android:fontFamily="@font/power_grotesk_regular" android:textFontWeight="400" />
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="30.0sp" android:textColor="@color/selector_000000_ffffff" android:gravity="center" android:id="@id/tv_continue_on_wifi" android:background="@drawable/selector_ff4d00_00000000_r10" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusUp="@id/cblv_title" android:layout_width="fill_parent" android:layout_height="36.0dip" android:minWidth="0.0dip" android:minHeight="0.0dip" android:text="@string/text_init_step_connect_unlock_sim_continue_on_wi_fi" android:fontFamily="@font/power_grotesk_regular" android:textFontWeight="400">
+        <requestFocus />
+    </androidx.appcompat.widget.AppCompatTextView>
+</androidx.appcompat.widget.LinearLayoutCompat>

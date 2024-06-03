@@ -1,0 +1,42 @@
+version: 2.9.3
+apkFileName: RabbitLauncher0517.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 33
+  targetSdkVersion: 33
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 2077777700
+  versionName: 20240517.18-dirty
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: 8
+  androidsupportmultidexversion.txt: 8
+  kotlin-tooling-metadata.json: 8
+  okhttp3/internal/publicsuffix/NOTICE: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 8
+doNotCompress:
+- classes.dex
+- resources.arsc
+- mp3
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- gif
+- png
+- lib/arm64-v8a/libapp.so
+- lib/arm64-v8a/libbase.so
+- lib/arm64-v8a/libc++_shared.so
+- lib/arm64-v8a/libflutter.so
+- lib/arm64-v8a/libmediasoupclient_so.so
+- lib/arm64-v8a/libsentry-android.so
+- lib/arm64-v8a/libsentry.so
+- jpg
+- ogg

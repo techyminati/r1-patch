@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tech.rabbit.r1launcher.initstep.widget.NumberPickerView android:id="@id/npv_picker" android:layout_width="fill_parent" android:layout_height="fill_parent" app:hasOk="true" app:maxLength="8" app:minLength="4" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_tips_container" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_marginStart="3.0dip">
+        <TextView android:textSize="30.0sp" android:textColor="@color/white" android:id="@id/tv_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingMultiplier="1.1" android:fontFamily="@font/power_grotesk_regular" android:textFontWeight="400" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/AAAAAA" android:id="@id/tv_tips2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/text_init_step_connect_unlock_sim_sim_is_locked" android:includeFontPadding="false" android:fontFamily="@font/power_grotesk_regular" android:letterSpacing="0.02" android:textFontWeight="400" />
+    </LinearLayout>
+</FrameLayout>

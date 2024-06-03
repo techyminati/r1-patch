@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tech.rabbit.r1launcher.widget.CanBackLabelView android:id="@id/cblv_title" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusDown="@id/rv_list" android:layout_width="fill_parent" android:layout_height="40.0dip" app:canBackLabelViewFocusedLabel="@string/settings" app:canBackLabelViewUnfocusedLabel="@string/settings_page_time" app:visibleFadeBackground="true" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="24.0sp" android:textColor="@color/dark_414141" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginTop="5.0dip" android:text="@string/title_timezone" android:includeFontPadding="false" android:fontFamily="@font/power_grotesk_regular" android:textFontWeight="400" />
+    <com.rubensousa.dpadrecyclerview.DpadRecyclerView android:id="@id/rv_list" android:nextFocusUp="@id/cblv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+</LinearLayout>

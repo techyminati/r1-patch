@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/sc_container" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusUp="@id/cblv_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="36.0dip">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/ll_content_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:divider="@drawable/divider_vertical_00000000_9" app:showDividers="middle" />
+    </ScrollView>
+    <tech.rabbit.r1launcher.widget.CanBackLabelView android:id="@id/cblv_title" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusDown="@id/rv_list" android:layout_width="wrap_content" android:layout_height="wrap_content" app:canBackLabelViewFocusedLabel="@string/settings" app:canBackLabelViewUnfocusedLabel="@string/settings_page_system_about" app:visibleFadeBackground="true" />
+    <tech.rabbit.r1launcher.widget.scrollbar.ScrollBarExtView android:id="@id/sbev_scroll_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

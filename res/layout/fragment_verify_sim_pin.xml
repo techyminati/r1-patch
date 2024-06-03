@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root_container" android:focusable="true" android:focusableInTouchMode="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <tech.rabbit.r1launcher.initstep.widget.NumberPickerView android:id="@id/npv_picker" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:hasOk="true" app:maxLength="8" app:minLength="4">
+        <requestFocus />
+    </tech.rabbit.r1launcher.initstep.widget.NumberPickerView>
+    <tech.rabbit.r1launcher.widget.CanBackLabelView android:id="@id/cblv_title" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusUp="@id/fl_root_container" android:nextFocusDown="@id/fl_root_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="2.0dip" app:canBackLabelViewFocusedLabel="@string/settings_page_sim_pin" app:canBackLabelViewUnfocusedLabel="@string/settings_page_sim_pin" app:visibleFadeBackground="true" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_tips_container" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginBottom="90.0dip" android:layout_marginStart="3.0dip">
+        <TextView android:textSize="30.0sp" android:textColor="@color/white" android:id="@id/tv_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingMultiplier="1.2" android:fontFamily="@font/power_grotesk_regular" android:textFontWeight="400" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/AAAAAA" android:id="@id/tv_tips2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="@string/text_settings_sim_pin_sim_is_locked" android:includeFontPadding="false" android:fontFamily="@font/power_grotesk_regular" android:textFontWeight="400" />
+    </LinearLayout>
+</FrameLayout>

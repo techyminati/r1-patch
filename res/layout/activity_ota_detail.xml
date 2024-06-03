@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/sv_container" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:nextFocusUp="@id/cblv_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="25.0dip" android:overScrollMode="never">
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/tvContent" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0sp" android:fontFamily="@font/power_grotesk_regular" android:textFontWeight="400" />
+        </ScrollView>
+        <tech.rabbit.r1launcher.widget.CanBackLabelView android:id="@id/cblv_title" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusDown="@id/sv_container" android:layout_width="fill_parent" android:layout_height="36.0dip" app:canBackLabelViewFocusedLabel="@string/text_back" app:canBackLabelViewUnfocusedLabel="@string/ota_release_notes" app:visibleFadeBackground="true" />
+        <View android:layout_gravity="start|bottom|center" android:background="@drawable/overlay_gradient_000000_00000000_a90" android:layout_width="fill_parent" android:layout_height="72.0dip" />
+    </FrameLayout>
+    <tech.rabbit.r1launcher.widget.scrollbar.ScrollBarExtView android:id="@id/sbev_scroll_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
