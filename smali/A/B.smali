@@ -1,8 +1,27 @@
-.class public interface abstract LA/B;
+.class public abstract LA/b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract b(Landroid/view/View;)Z
+# direct methods
+.method public static a(Landroid/view/accessibility/AccessibilityEvent;)I
+    .locals 0
+    .annotation build Landroidx/annotation/DoNotInline;
+    .end annotation
+
+    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityEvent;->getContentChangeTypes()I
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public static b(Landroid/view/accessibility/AccessibilityEvent;I)V
+    .locals 0
+    .annotation build Landroidx/annotation/DoNotInline;
+    .end annotation
+
+    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityEvent;->setContentChangeTypes(I)V
+
+    return-void
 .end method

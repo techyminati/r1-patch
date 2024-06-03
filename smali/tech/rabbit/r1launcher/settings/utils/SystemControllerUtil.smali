@@ -388,69 +388,11 @@
 .end method
 
 .method public final getImei(Landroid/content/Context;)Ljava/lang/String;
-    .locals 1
-    .annotation build Landroid/annotation/SuppressLint;
-        value = {
-            "HardwareIds"
-        }
-    .end annotation
+    .locals 0
 
-    const-string p0, "context"
+    .line 49
+    const-string p0, "358476310019054"
 
-    invoke-static {p1, p0}, Lio/sentry/android/core/internal/util/c;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-class p0, Landroid/telephony/TelephonyManager;
-
-    invoke-virtual {p1, p0}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Landroid/telephony/TelephonyManager;
-
-    if-eqz p0, :cond_0
-
-    invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getImei()Ljava/lang/String;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    if-eqz p0, :cond_1
-
-    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    :cond_1
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    const-string v0, "aid"
-
-    invoke-direct {p0, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object p1
-
-    const-string v0, "android_id"
-
-    invoke-static {p1, v0}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    :cond_2
     return-object p0
 .end method
 

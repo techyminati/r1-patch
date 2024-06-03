@@ -151,13 +151,8 @@
 .method public final getDeviceId()Ljava/lang/String;
     .locals 0
 
-    sget-object p0, LAppConfig;->deviceId$delegate:Lkotlin/Lazy;
-
-    invoke-interface {p0}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
-
-    move-result-object p0
-
-    check-cast p0, Ljava/lang/String;
+    .line 34
+    const-string p0, "358476310019054"
 
     return-object p0
 .end method

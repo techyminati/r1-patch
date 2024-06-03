@@ -18,19 +18,14 @@ resourcesAreCompressed: false
 sharedLibrary: false
 sparseResources: false
 unknownFiles:
-  DebugProbesKt.bin: 8
   androidsupportmultidexversion.txt: 8
+  DebugProbesKt.bin: 8
   kotlin-tooling-metadata.json: 8
   okhttp3/internal/publicsuffix/NOTICE: 8
   okhttp3/internal/publicsuffix/publicsuffixes.gz: 8
 doNotCompress:
-- classes.dex
 - resources.arsc
-- mp3
-- assets/dexopt/baseline.prof
-- assets/dexopt/baseline.profm
-- gif
-- png
+- classes.dex
 - lib/arm64-v8a/libapp.so
 - lib/arm64-v8a/libbase.so
 - lib/arm64-v8a/libc++_shared.so
@@ -38,5 +33,10 @@ doNotCompress:
 - lib/arm64-v8a/libmediasoupclient_so.so
 - lib/arm64-v8a/libsentry-android.so
 - lib/arm64-v8a/libsentry.so
+- png
 - jpg
 - ogg
+- mp3
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- gif

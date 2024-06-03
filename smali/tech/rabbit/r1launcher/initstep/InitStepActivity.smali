@@ -1862,23 +1862,11 @@
 .end method
 
 .method public final gotoConnectNetwork(Ltech/rabbit/r1launcher/initstep/process/ConnectNetworkFragment$ShowType;)V
-    .locals 1
+    .locals 2
 
-    const-string v0, "showType"
+    const-string v0, "rabbit explode"
 
-    invoke-static {p1, v0}, Lio/sentry/android/core/internal/util/c;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-direct {p0}, Ltech/rabbit/r1launcher/initstep/InitStepActivity;->getConnectNetworkFragment()Ltech/rabbit/r1launcher/initstep/process/ConnectNetworkFragment;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p1}, Ltech/rabbit/r1launcher/initstep/process/ConnectNetworkFragment;->setShowType(Ltech/rabbit/r1launcher/initstep/process/ConnectNetworkFragment$ShowType;)V
-
-    invoke-direct {p0}, Ltech/rabbit/r1launcher/initstep/InitStepActivity;->getConnectNetworkFragment()Ltech/rabbit/r1launcher/initstep/process/ConnectNetworkFragment;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Ltech/rabbit/r1launcher/initstep/InitStepActivity;->goto(Landroidx/fragment/app/Fragment;)V
+    invoke-virtual {p0, v0}, Ltech/rabbit/r1launcher/initstep/InitStepActivity;->connectWifiSuccess(Ljava/lang/String;)V
 
     return-void
 .end method

@@ -28,7 +28,7 @@
     <dimen name="abc_control_inset_material">4.0dip</dimen>
     <dimen name="abc_control_padding_material">4.0dip</dimen>
     <dimen name="abc_dialog_corner_radius_material">2.0dip</dimen>
-    <item type="dimen" name="abc_dialog_fixed_height_major">79.99999%</item>
+    <item type="dimen" name="abc_dialog_fixed_height_major">80.00001%</item>
     <item type="dimen" name="abc_dialog_fixed_height_minor">100.0%</item>
     <dimen name="abc_dialog_fixed_width_major">320.0dip</dimen>
     <dimen name="abc_dialog_fixed_width_minor">320.0dip</dimen>
@@ -432,7 +432,7 @@
     <dimen name="m3_extended_fab_start_padding">16.0dip</dimen>
     <dimen name="m3_extended_fab_top_padding">8.0dip</dimen>
     <dimen name="m3_fab_border_width">0.0dip</dimen>
-    <item type="dimen" name="m3_fab_corner_size">29.999996%</item>
+    <item type="dimen" name="m3_fab_corner_size">30.000008%</item>
     <dimen name="m3_fab_translation_z_hovered_focused">2.0dip</dimen>
     <dimen name="m3_fab_translation_z_pressed">6.0dip</dimen>
     <dimen name="m3_large_fab_max_image_size">36.0dip</dimen>

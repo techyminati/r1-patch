@@ -125,13 +125,13 @@
 
 .field public static final VERTICAL:I = 0x1
 
-.field static sDebugAssertionsEnabled:Z = false
+.field static sDebugAssertionsEnabled:Z
 
 .field static final sDefaultEdgeEffectFactory:Landroidx/recyclerview/widget/RecyclerView$StretchEdgeEffectFactory;
 
 .field static final sQuinticInterpolator:Landroid/view/animation/Interpolator;
 
-.field static sVerboseLoggingEnabled:Z = false
+.field static sVerboseLoggingEnabled:Z
 
 
 # instance fields

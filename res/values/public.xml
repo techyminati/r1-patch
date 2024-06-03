@@ -3199,8 +3199,8 @@
     <public type="drawable" name="notification_bg_low_pressed" id="0x7f0700f8" />
     <public type="drawable" name="notification_bg_normal" id="0x7f0700f9" />
     <public type="drawable" name="notification_bg_normal_pressed" id="0x7f0700fa" />
-    <public type="drawable" name="notify_panel_notification_icon_bg" id="0x7f070100" />
     <public type="drawable" name="notification_oversize_large_icon_bg" id="0x7f0700fc" />
+    <public type="drawable" name="notify_panel_notification_icon_bg" id="0x7f070100" />
     <public type="drawable" name="ic_4g" id="0x7f07008c" />
     <public type="drawable" name="ic_brightness_settings" id="0x7f07008e" />
     <public type="drawable" name="ic_connect_network_retry" id="0x7f070097" />

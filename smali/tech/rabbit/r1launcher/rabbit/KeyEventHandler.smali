@@ -116,23 +116,34 @@
 .method public final onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
 
-    const/16 p0, 0x13
+    const/16 p0, 0x18
 
     if-eq p1, p0, :cond_0
+
+    const/16 p0, 0x19
+
+    if-eq p1, p0, :cond_0
+
+    const/16 p0, 0x13
+
+    if-eq p1, p0, :cond_1
 
     const/16 p0, 0x14
 
-    if-eq p1, p0, :cond_0
+    if-eq p1, p0, :cond_1
 
     packed-switch p1, :pswitch_data_0
 
     goto :goto_0
 
     :cond_0
+    const/16 p1, 0x1a
+
+    :cond_1
     :pswitch_0
     sget p0, Ltech/rabbit/r1launcher/rabbit/KeyEventHandler;->lastKey:I
 
-    if-eq p0, p1, :cond_2
+    if-eq p0, p1, :cond_3
 
     sget-object p0, Ltech/rabbit/r1launcher/wss/RabbitEngine;->INSTANCE:Ltech/rabbit/r1launcher/wss/RabbitEngine;
 
@@ -142,7 +153,7 @@
 
     sget-object p0, Ltech/rabbit/r1launcher/rabbit/KeyEventHandler;->deviceEvents:LDeviceEventsDispatcher;
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_2
 
     int-to-long v0, p1
 
@@ -156,7 +167,7 @@
 
     goto :goto_0
 
-    :cond_1
+    :cond_2
     const-string p0, "deviceEvents"
 
     invoke-static {p0}, Lio/sentry/android/core/internal/util/c;->b0(Ljava/lang/String;)V
@@ -165,7 +176,7 @@
 
     throw p0
 
-    :cond_2
+    :cond_3
     :goto_0
     const/4 p0, 0x1
 
@@ -190,19 +201,30 @@
 
     sput p1, Ltech/rabbit/r1launcher/rabbit/KeyEventHandler;->lastUpKey:I
 
-    const/16 p0, 0x13
+    const/16 p0, 0x18
 
     if-eq p1, p0, :cond_0
+
+    const/16 p0, 0x19
+
+    if-eq p1, p0, :cond_0
+
+    const/16 p0, 0x13
+
+    if-eq p1, p0, :cond_1
 
     const/16 p0, 0x14
 
-    if-eq p1, p0, :cond_0
+    if-eq p1, p0, :cond_1
 
     packed-switch p1, :pswitch_data_0
 
     goto :goto_0
 
     :cond_0
+    const/16 p1, 0x1a
+
+    :cond_1
     :pswitch_0
     sget-object p0, Ltech/rabbit/r1launcher/rabbit/KeyEventHandler;->TAG:Ljava/lang/String;
 
@@ -222,7 +244,7 @@
 
     sget-object p0, Ltech/rabbit/r1launcher/rabbit/KeyEventHandler;->deviceEvents:LDeviceEventsDispatcher;
 
-    if-eqz p0, :cond_1
+    if-eqz p0, :cond_2
 
     int-to-long v0, p1
 
@@ -239,7 +261,7 @@
 
     return p0
 
-    :cond_1
+    :cond_2
     const-string p0, "deviceEvents"
 
     invoke-static {p0}, Lio/sentry/android/core/internal/util/c;->b0(Ljava/lang/String;)V

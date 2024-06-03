@@ -23,7 +23,7 @@
 
 .field private static final TAG:Ljava/lang/String; = "SkiaPooledImageRegionDecoder"
 
-.field private static debug:Z = false
+.field private static debug:Z
 
 
 # instance fields

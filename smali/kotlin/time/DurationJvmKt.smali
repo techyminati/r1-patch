@@ -45,7 +45,7 @@
 
 
 # static fields
-.field private static final durationAssertionsEnabled:Z = false
+.field private static final durationAssertionsEnabled:Z
 
 .field private static final precisionFormats:[Ljava/lang/ThreadLocal;
     .annotation system Ldalvik/annotation/Signature;

@@ -65,13 +65,10 @@
 .end method
 
 .method private final getOSVersion()Ljava/lang/String;
-    .locals 1
+    .locals 0
 
-    sget-object p0, Landroid/os/Build;->DISPLAY:Ljava/lang/String;
-
-    const-string v0, "DISPLAY"
-
-    invoke-static {p0, v0}, Lio/sentry/android/core/internal/util/c;->g(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 49
+    const-string p0, "rabbit_OS_v0.8.86_20240523151103"
 
     return-object p0
 .end method
